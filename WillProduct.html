@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Implementation</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <!-- Navigation Start. Keep this consistent throughout the pages-->
+    <nav class="navbar">
+      <div class="logo">GR8 Consulting</div>
+          <div class="nav-links">
+              <input type="checkbox" id="checkbox_toggle" >
+              <label for="checkbox_toggle" class="hamburger">&#9776;</label>  
+              <div class="menu">
+              <div class="list1"><a href="index.html">Home</a></div>
+              <div class="list1"><a href="aboutus.html">About</a></div>     
+              <div class="services list1">
+              <a href="#">Products</a>
+              <!-- DROPDOWN MENU -->
+              <ul class="dropdown-content">
+                  <li class="list2"><a href="ChrisProduct.html">Chris</a></li>
+                  <li class="list2"><a href="bikeinfrastructure.html">Grace</a></li>
+                  <li class="list2"><a href="WillProduct.html">William</a></li>
+                  <li class="list2"><a href="hurricanemanagement.html">Ryan</a></li>
+              </ul>
+              </div>
+              <div class="list1"><a href="gallery.html">Gallery</a></div>
+              <div class="list1"><a href="contact.html">Contact Us</a></div>
+          </div>    
+      </div>
+    </nav>
+  <!-- Navigation End. Keep this consistent throughout the pages-->
+
+  <!--  Who is William Section-->
+  <section class="background0000">
+    <div id="Section80">
+      <h3>Who is William?</h3>
+    </div>
+    <div class='container3'>
+      <img class='resize_fit_center'
+        src='image/willy.JPG' alt="Will and Friends">
+  </div>
+  <p id="Section70">
+    You guessed it! - I'm the handsome fella in the middle
+  </p>
+    <p id="Section71">
+      My name is William Inglis and a student at Fleming College. A hardworker at the YMCA and an aspiring aquafit instructor.
+    </p>
+</section>
+<!-- End of Who is William Section-->
+
+<!--  Who is William Section-->
+ <section class="background0000">
+  <div id="Section79">
+    <h3>What keeps me motivated?</h3>
+  </div>
+  <div class='container3'>
+    <img class='resize_fit_center'
+      src='image/Ronnie.JPG' alt="Will and Friendss">
+</div>
+  <p id="Section82">
+    Ronnie Coleman - "Yeah Buddy. Lightweight Baby. Woo!"
+  </p>
+</section>
+<!-- End of Who is William Section-->
+
+<!-- My product Section-->
+  <section class="background1">
+    <div class="container2">
+      <div class="centerr">
+        <h1>What can I do for you?</h1>
+        <h2>Implementation of trip planning</h2>
+        <img class='resize_fit_center'
+        src='image/TravelPhoto.jpg' alt="TravelPhoto">
+        <p id="Section81">
+          This use of the trip planning will help clients who are interested in visiting Ontario's Provincal Parks.
+          <br>
+          <br>
+          My contribution to this consulting company is designing and implementing a python application for those looking to visit Provincial Parks in Ontario. More specifically, this application will help users to plan their trip and visit all their desired points of interest in the most efficient manner possible.
+          <br>
+          <br>
+          Based on which parks the user inputs as locations they are interested in, the application will calculate the distances, bearings and trip length, and return to the user an itinerary of parks to visit (in sequential order)
+          <br>
+          <br>
+          The program uses a sophisticated program structure that takes the inputs from the user and calculates the distance using the Harversine formula, bearing calculation, and time to drive to that location based on an average driving speed. 
+          <br>
+          <br>
+          These behind the scenes calculations will output a trip itinerary for the client and what the trip to the location will look like. 
+        </p>
+      </div>
+    </div>
+  </section>
+<!-- End of My Product Section-->
+
+<!-- Travel photo centered-->
+<section class="background0000">
+  <div class="container2">
+  <div class="centerr2">
+    <h2>Imagine yourself traveling around the world...</h2>
+    <img class='resize_fit_center'
+      src='image/TravellPhoto.jpg' alt="TravelPhoto">
+      </div>
+    </div>
+  </section>
+
+    <!-- Concluding remarks and button to contact us page-->   
+    <section class="background2">
+      <div class="container2">
+          <div class="center">
+              <h1>If you'd like to learn more...</h1>
+              <p>Get in touch with one of our GIS specialists today!</p>
+              <button onclick = "myButton()">Book a Consultation</button>
+          </div>
+          <!--Back to Top Button-->
+          <div>
+              <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+          </div>
+      </div>
+    </section>
+    <script src="Script.js"></script> <!-- Call in script.js for button and other functions-->
+    <script>
+      // Get the button:
+      let mybutton = document.getElementById("myBtn");
+      
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      
+    </script>
+  </body>
+
+</html>

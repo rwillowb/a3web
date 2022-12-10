@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gallery</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+  
+  <body>
+    <!-- Navigation Start. Keep this consistent throughout the pages-->
+    <nav class="navbar">
+      <div class="logo">GR8 Consulting</div>
+          <div class="nav-links">
+              <input type="checkbox" id="checkbox_toggle" >
+              <label for="checkbox_toggle" class="hamburger">&#9776;</label>  
+              <div class="menu">
+              <div class="list1"><a href="index.html">Home</a></div>
+              <div class="list1"><a href="aboutus.html">About</a></div>     
+              <div class="services list1">
+              <a href="#">Products</a>
+              <!-- DROPDOWN MENU -->
+              <ul class="dropdown-content">
+                  <li class="list2"><a href="ChrisProduct.html">Chris</a></li>
+                  <li class="list2"><a href="bikeinfrastructure.html">Grace</a></li>
+                  <li class="list2"><a href="WillProduct.html">William</a></li>
+                  <li class="list2"><a href="hurricanemanagement.html">Ryan</a></li>
+              </ul>
+              </div>
+              <div class="list1"><a href="gallery.html">Gallery</a></div>
+              <div class="list1"><a href="contact.html">Contact Us</a></div>
+          </div>    
+      </div>
+    </nav>
+  <!-- Navigation End. Keep this consistent throughout the pages-->
+
+    <section class="background2">
+
+      <h2 id="HLayout1">
+        <i> GR8 Consulting </i> Gallery
+      </h2>
+
+      <!-- Slideshow-->
+
+    <!-- Container for the image gallery -->
+    <div class="container4">
+
+      <!-- Full-width images with number text -->
+          <div class="mySlides">
+            <div class="numbertext">1 / 8</div>
+            <img src="image/BikeMap1.png" alt="Bike Map 1 of Hamilton" class="image1">
+          </div>
+  
+          <div class="mySlides">
+            <div class="numbertext">2 / 8</div>
+            <img src="image/BikeMap2.png" alt="Bike Map 2 of Hamilton" class="image1">
+          </div>
+  
+          <div class="mySlides">
+            <div class="numbertext">3 / 8</div>
+            <img src="image/BikeMap3.png" alt="Bike Map 3 of Hamilton" class="image1">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">4 / 8</div>
+            <img src="image/BikeMap4.png" alt="Traffic flow analysis" class="image1">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">5 / 8</div>
+            <img src="image/GTHA1.png" alt="GTHA population density" class="image1">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">6 / 8</div>
+            <img src="image/ChrisMapTopo.jpg" alt="Topographic Map" class="image1">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">7 / 8</div>
+            <img src="image/ChirsMapGrey.jpg" alt="Greyscale Map" class="image1">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">8 / 8</div>
+            <img src="image/hurricanepathing1.jpg" alt="Hurricane Pathing" class="image1">
+          </div>
+
+  
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+          <!-- Image text -->
+          <div class="caption-container">
+            <p id="caption">Generated Maps</p>
+          </div>
+          
+  
+          <!-- Thumbnail images -->
+          <div class="row">
+            <div class="column">
+              <img class="demo cursor" src="image/BikeMap1.png" alt="Street network of Hamilton" onclick="currentSlide(1)">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="image/BikeMap2.png" alt="Hamilton" onclick="currentSlide(2)">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="image/BikeMap3.png" alt="Local bike network" onclick="currentSlide(3)">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="image/BikeMap4.png" alt="Traffic flow analysis" onclick="currentSlide(4)">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="image/GTHA1.png" alt="GTHA Population Density" onclick="currentSlide(5)">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="image/ChrisMapTopo.jpg" alt="Topographic Map" onclick="currentSlide(6)">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="image/ChirsMapGrey.jpg" alt="Greyscale Map" onclick="currentSlide(7)">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="image/hurricanepathing1.jpg" alt="Hurricane Pathing" onclick="currentSlide(8)">
+            </div>
+          </div>
+    </div>
+
+    </section>
+
+    <script src="Script.js"></script> <!-- Call in script.js for button and other functions--> 
+  
+    <!-- Call in script specific for this page.-->
+    <script>
+      let 
+      slideIndex=1; 
+      showSlides(slideIndex);
+    </script>
+
+  </body>
+
+</html>

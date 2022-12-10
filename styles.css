@@ -1,0 +1,947 @@
+/* Description: Master CSS file */
+
+/*****************************************
+Table Of Contents:
+- Home (Index) Page (Owner: Ryan and Grace)
+- Navigation (Owner: Grace)
+- Button (Owner: Grace)
+- Grace's Page (Owner: Grace)
+- Chris' Page (Owner: Chris)
+- Will's Page (Owner: Will)
+- Ryan's Page (Owner: Ryan)
+- Responsive Layout (Owner: Grace)
+- Back to Top Button (Owner: Ryan)
+******************************************/
+
+
+/**************************/
+/*     Home     */
+/**************************/
+
+/* CSS Start */
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+  }
+
+ .background1 {
+    background: white;
+ }
+  
+.background2 {
+  min-height: 100vh;
+  background:linear-gradient(rgba(198, 59, 250,.8),rgba(198, 59, 250,.8)), url(https://upload.wikimedia.org/wikipedia/commons/0/0e/World_Bedrock_Digital_Elevation_Model.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 0;
+  overflow:hidden;
+  position: relative;
+  border-style: solid
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 95vh;
+  padding: 0.5rem 1.33rem;
+}
+
+.containerindex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 95vh;
+  padding: 1rem 6.5rem;
+  border-bottom: 7px dashed #573DFC;
+}
+
+.container2{
+  margin: 2rem;
+  width: 100%; 
+}
+
+.center{
+  justify-content: center;
+  padding: 3rem;
+  color:  #000;
+  align-items: center;
+  text-align: center;
+
+}
+
+.center h1 {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
+.center p {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+  
+ .column-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #000;
+    padding: 0rem 2rem;
+ }
+  
+ .column-left h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+ }
+  
+ .column-left p {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+ }
+  
+ button {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: none;
+    color: #9137bb;
+    background: #000;
+    cursor: pointer;
+    border-radius: 50px;
+ }
+  
+ button:hover {
+    background: #fff;
+    color: #000;
+ }
+  
+ .column-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 0rem 2rem;
+ }
+
+ .image {
+    width: 100%;
+    height: 100%;
+ }
+
+ .gif{
+  max-width: 550px;
+  max-height: 550px;
+  width: 100%;
+  height: 100%;
+  display:flex;
+  align-items:flex-end;
+  justify-content:right;
+  
+ }
+
+ .centergeneral{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+ html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.columnn {
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 5px;
+}
+
+/* Image dimensions */
+.responsive3 {
+  max-width: 250px;
+  height: auto;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 770px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.cardd {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.containerr {
+  padding: 0 16px;
+}
+
+.containerr::after, .roww::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.titlee {
+  color: grey;
+  text-align: center;
+}
+
+.headerr {
+  color: black;
+  text-align: center;
+}
+
+.button3 {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button3:hover {
+  background-color: #555;
+}
+
+/* CSS End */
+
+
+ /**************************/
+/*     Navigation     */
+/**************************/
+
+a {
+  text-decoration: none;
+  }
+  
+  .list1 {
+  list-style: none;
+  }
+  
+  .list2 {
+  list-style: none;
+  padding: 0px;
+  }
+  
+  .list2::before{
+    content: '\27A5';
+  }
+  
+
+ /*LOGO*/
+ .logo {
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0 2rem;
+}
+
+/* Navbar basics */
+.navbar {
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color: #573DFC;
+color: #fff;
+padding: 1.33rem;
+}
+
+.nav-links a {
+color: #fff;
+padding: 1rem;
+align-items: center;
+}
+
+
+/* NAVBAR MENU */
+.menu {
+display: flex;
+gap: 1em;
+font-size: 18px;
+padding: 1rem;
+}
+
+.menu li:hover {
+background-color: #573DFC;
+border-radius: 5px;
+transition: 0.5s ease !important;
+}
+
+.menu li {
+padding: 5px 14px !important;
+}
+
+/* DROPDOWN MENU */
+
+.services {
+position: relative;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #573DFC;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content li + li {
+margin-top: 16px;
+}
+
+.dropdown-content li {
+padding: 0.5em 1em;
+width: 8em;
+text-align: center;
+}
+
+.dropdown-content li:hover {
+background-color: #573DFC;
+}
+
+.services:hover .dropdown-content {
+display: block;
+}
+
+/*RESPONSIVE NAVBAR MENU*/
+
+/* CHECKBOX HACK */
+
+input[type=checkbox]{
+  display: none; 
+  }
+  
+  /*HAMBURGER MENU*/
+  
+  .hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+  }
+
+/* Navigation Dropdown Menu CSS END*/
+
+ /**************************/
+/*     About Us Page    */
+/**************************/
+
+.nameid{
+  font-size: 1.33rem;
+  color:#573DFC;
+  font-style: italic;
+}
+
+
+/**************************/
+/*     Grace's Page     */
+/**************************/
+
+
+/* CSS START*/ 
+
+/* #list1{
+  text-align: center;
+  color: #fff;
+  list-style: square;
+  list-style-position: inside;
+  font-size: 1.5rem} */
+
+  /*CSS FOR SLIDESHOW - Grace's Page*/
+
+  * {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container4 {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position:relative;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 0.75rem 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #573DFC;
+  padding: 2px 16px;
+  color: white;
+}
+
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Three columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  margin: auto;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+  width: 50%;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/* Misc CSS for Grace's page*/
+
+  .background3{
+  background: #573DFC;
+  border-style: solid;
+  opacity: 75%;
+  }
+
+  image.centered{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+  .PLayout1{
+  display: block;
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+  margin-right: 120em;
+  margin-left: 120em; 
+  }
+
+  #HLayout1{
+  display: block;
+  font-size: 2.5rem;
+  color: #fff;
+  text-align: center; 
+  }
+
+  #PLayout2{
+  display: block;
+  font-size: 0.90rem;
+  color: rgb(83, 79, 79);
+  text-align: center;
+  }
+
+  #PLayout3{
+    display: block;
+    font-size: 0.90rem;
+    color: rgb(83, 79, 79);
+    text-align: center;
+    }
+
+  .image1 {
+  width: 100%;
+  max-width: 1000px
+}
+
+/* CSS END */
+
+
+/**************************/
+/*     Chris's Page    */
+/**************************/
+
+
+/* CSS START*/
+
+/* Contact us Page */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column33 {
+  float: left;
+  margin: auto;
+  width: 33.33%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.rowcontact:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*rounding of images*/
+.imageround{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  resize: 200px;
+  border-radius: 40%;
+  }
+
+  @media screen and (max-width: 768px) {
+    .column33 {
+      width: 100%;
+    }}
+/*..............................Chris Product Page........................................*/
+/* The grid: Four equal columns that floats next to each other */
+.column25 {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column25 img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column25 img:hover {
+  opacity: 1;
+}
+
+
+/* The expanding image container */
+.containerrelative {
+  position: relative;
+  display: none;
+}
+
+.imageproductchris {
+  max-width: 1000px;
+  width: 100%;
+}
+
+
+
+/*..............END CHRIS PRODUCT PAGE....................*/
+
+.background000{
+background: black;
+border-style: solid;
+opacity: 100%;
+}
+
+
+#PLayout1{
+  display: block;
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+  margin-right: 120em;
+  margin-left: 120em; 
+}
+
+#Section{
+  display: block;
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+#Section2{
+  display: block;
+  font-size: 0.90rem;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  }
+
+
+/* CSS END */
+
+
+/**************************/
+/*     Will's Page    */
+/**************************/
+
+/*CSS Start*/
+
+.background0000{
+background: black;
+border-style: solid;
+opacity: 100%;
+}
+
+image.centered{
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+#PLayout1{
+  display: block;
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+  margin-right: 120em;
+  margin-left: 120em; 
+}
+
+#HLayout1{
+  display: block;
+  font-size: 2.5rem;
+  color: #fff;
+  text-align: center; 
+}
+
+#Section70{
+  display: block;
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+#Section79{
+  display: block;
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+#Section80{
+  display: block;
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+#Section71{
+  display: block;
+  font-size: 0.90rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  }
+
+#Section81{
+  display: block;
+  font-size: 0.90rem;
+  color: rgb(0, 0, 0);
+  text-align: center;
+} 
+
+#Section82{
+  display: block;
+  font-size: 0.90rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+} 
+
+.image1 {
+  width: 60%;
+}
+
+#row2{
+content: "";
+display: table;
+clear: both;
+color: rgb(255, 255, 255);
+}
+
+.container3{
+margin: 10px;
+width: 250px;
+height: 250px;
+margin-left: auto;
+margin-right: auto;
+line-height: 115px;
+text-align: center;
+border: 1px solid black;
+}
+
+.resize_fit_center {
+max-width:100%;
+max-height:100%;
+text-align: center;
+vertical-align: middle;
+}
+
+.centerr{
+justify-content: center;
+padding: 3rem;
+color:  #000;
+align-items: center;
+text-align: center;
+}
+
+.centerr2{
+  justify-content: center;
+  padding: 3rem;
+  color:  rgb(255, 255, 255);
+  align-items: center;
+  text-align: center;
+  }
+
+.centerr h1 {
+margin-bottom: 1rem;
+font-size: 5rem;
+}
+
+.centerr h2 {
+  margin-bottom: 1rem;
+  font-size: 4rem;
+}
+
+.centerr p {
+margin-bottom: 2rem;
+font-size: 3rem;
+line-height: 1.5;
+}
+
+/*CSS End*/
+
+/**************************/
+/*     Ryan's Page    */
+/**************************/
+
+/*CSS Start*/
+
+.header3 {  
+  text-align: center;
+	font-size: 50px;
+	font-family: Garamond;
+}
+
+.background000{
+background: black;
+border-style: solid;
+opacity: 100%;
+align-items: center;
+}
+
+.imagerr {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+	height: auto;
+}
+
+#PLayout13{
+  display: block;
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+  margin-right: 120em;
+  margin-left: 120em; 
+}
+
+#HLayout13{
+  display: block;
+  font-size: 2.5rem;
+  color: #fff;
+  text-align: center; 
+}
+
+#Section13{
+  display: block;
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+#Section21{
+  display: block;
+  font-size: 0.90rem;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  }
+
+#row21{
+  content: "";
+  display: table;
+  clear: both;
+  color: rgb(255, 255, 255);
+  }
+
+.container31 {
+  position: relative;
+  justify-content: left;
+  text-align: left;
+  padding: 15px;
+}
+
+.resize_fit_center {
+  max-width:100%;
+  left: auto;
+  right: auto;
+  max-height:100%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.columnn3 {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.roww3::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Image dimensions */
+.responsive2 {
+  max-width: 1000px;
+  height: auto;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*CSS End*/
+
+
+/******************************/
+/*     Back To Top Button     */
+/******************************/
+#myBtn {
+display: none; /* Hidden by default */
+position: fixed; /* Fixed/sticky position */
+bottom: 20px; /* Place the button at the bottom of the page */
+right: 30px; /* Place the button 30px from the right */
+z-index: 99; /* Make sure it does not overlap */
+border: none; /* Remove borders */
+outline: none; /* Remove outline */
+background-color: rgb(76, 0, 255); /* Set a background color */
+color: white; /* Text color */
+cursor: pointer; /* Add a mouse pointer on hover */
+padding: 15px; /* Some padding */
+border-radius: 10px; /* Rounded corners */
+font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+background-color: #555; /* Add a dark-grey background on hover */
+}
+/* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 768px) {
+  .column {
+        width: 100%;
+  }
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .menu {
+  display:none;
+  position: absolute;
+  background-color:#573DFC;
+  right: 0;
+  left: 0;
+  text-align: center;
+  padding: 16px 0;
+
+  }
+
+  .menu li:hover {
+  display: inline-block;
+  background-color:#573DFC;
+  transition: 0.3s ease;
+
+  }
+
+  .menu li + li {
+  margin-top: 12px;
+
+  }
+
+  input[type=checkbox]:checked ~ .menu{
+  display: block;
+  }
+
+  .hamburger {
+  display: block;
+  }
+
+  .dropdown {
+  left: 50%;
+  top: 30px;
+  transform: translateX(35%);
+  }
+
+  .dropdown li:hover {
+  background-color: #573DFC;
+  } 
+}
+
+
+/*Responsive layout end*/
